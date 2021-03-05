@@ -1,0 +1,65 @@
+@import "~bootstrap/scss/bootstrap";
+
+/* universal */
+body {
+  padding-top: 10px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: rgb(168, 182, 187);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+
+  &:hover {
+    color: rgb(121, 129, 131);
+    text-decoration: none;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  margin-bottom: 0px;
+  list-style: none;
+  li {
+    padding-left: 15px;
+    font-size: 1.2em;
+    color: darkgrey;
+    font-weight: bold;
+    a {
+      color: azure;
+    }
+  }
+}
+
+.navbar-inverse {
+  background-color: rgb(3, 53, 77);
+}
+
+.main-jumbotron {
+  background-image: url("../../assets/images/entradaSinBarrotes.png");
+  color: azure;
+}
