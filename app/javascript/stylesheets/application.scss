@@ -31,7 +31,8 @@ textarea {
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
-
+  cursor: pointer;
+  
   &:hover {
     color: rgb(121, 129, 131);
     text-decoration: none;
@@ -41,7 +42,7 @@ textarea {
 .navbar-nav {
   display: flex;
   flex-direction: row;
-  padding-right: 10px;
+  padding-right: 5px;
   margin-bottom: 0px;
   list-style: none;
   li {
@@ -56,10 +57,41 @@ textarea {
 }
 
 .navbar-inverse {
-  background-color: rgb(3, 53, 77);
+  background-color: #4c5a7d;
 }
 
 .main-jumbotron {
-  background-image: url("../../assets/images/entradaSinBarrotes.png");
+  background-image: url("../../assets/images/alumnos.png");
   color: azure;
+  min-height: 500px;
+  h2 {
+    color: rgba(212, 88, 39, 0.514);
+  }
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  img {
+    float: left;
+  }
+}
+
+.btn-mini {
+  color: aliceblue;
+  font-size: 1em;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  //position: static;
+  float: none;
+  a.dropdown-item {
+    color: dodgerblue;
+  }
 }

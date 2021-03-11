@@ -1,13 +1,71 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= image_tag "escudoCEB61.png", size: "60x60" %>
-    <%= link_to "CEB 6-1", "#", id: "logo" %>
+    <div class="navbar navbar-brand">
+      <%= image_tag "escudoCEB61.png", size: "70x70" %>
+      <div id="logo" data-toggle="dropdown">
+        CEB 6-1
+      </div>
+      <ul class="dropdown-menu" role="menu">
+        <li><a class="dropdown-item" href="#">Misión</a></li>
+        <li><a class="dropdown-item" href="#">Visión</a></li>
+        <li><a class="dropdown-item" href="#">Organigrama</a></li>
+        <li><a class="dropdown-item" href="#">Comité de Padres de Familia</a></li>
+        <li><a class="dropdown-item" href="#">Red de Seguridad</a></li>
+        <li><a class="dropdown-item" href="#">Transparencia</a></li>
+        <li><a class="dropdown-item" href="#">Directorio Docentes</a></li>
+        <li><a class="dropdown-item" href="#">Orientación Educativa</a></li>
+        <li><a class="dropdown-item" href="#">Directivos</a></li>
+      </ul>
+    </div>
     <nav>
       <ul class="nav navbar-nav navbar-rigth">
-        <li><%= link_to "Información", "#" %></li>
-        <li><%= link_to "Servicios", "#" %></li>
-        <li><%= link_to "Control", "#" %></li>
-        <li><%= link_to "Virtual", "#" %></li>
+        <li class="nav-item dropdown">
+          <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+            <span>Información Académica</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#">Calendarios -</a></li>
+            <li><a class="dropdown-item" href="#">Mapas Curriculares -</a></li>
+            <li><a class="dropdown-item" href="#">Horarios -</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+            <span>Servicios Educativos</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#">Ingreso</a></li>
+            <li><a class="dropdown-item" href="#">Proceso de Admisión</a></li>
+            <li><a class="dropdown-item" href="#">Becas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+            <span>Control Escolar</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#">Certificados</a></li>
+            <li><a class="dropdown-item" href="#">Historiales Académicos</a></li>
+            <li><a class="dropdown-item" href="#">Bajas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+            <span>Aula Virtual</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#">Primer Semestre</a></li>
+            <li><a class="dropdown-item" href="#">Segundo Semestre</a></li>
+            <li><a class="dropdown-item" href="#">Tercer Semestre</a></li>
+            <li><a class="dropdown-item" href="#">Cuarto Semestre</a></li>
+            <li><a class="dropdown-item" href="#">Quinto Semestre</a></li>
+            <li><a class="dropdown-item" href="#">Sexto Semestre</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
