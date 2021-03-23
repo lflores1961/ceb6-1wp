@@ -1,0 +1,22 @@
+.sec-container {
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Clear floats */
+.sec-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sec-container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+ol {
+  list-style: decimal;
+}

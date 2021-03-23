@@ -10,6 +10,7 @@ gem 'pg', '~> 1.1'
 # Use Bootstrap for visual effect... 
 # gem 'bootstrap'
 # gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 gem 'mini_racer'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'

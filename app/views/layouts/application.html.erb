@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ceb61wp</title>
+    <title>CEB 6-1</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,6 +15,7 @@
   <body>
     <%= render 'layouts/header'%>
     <%= yield %>
+    <%= render "layouts/footer" %>
     <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
