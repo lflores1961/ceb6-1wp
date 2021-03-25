@@ -1,7 +1,7 @@
 .all-title-box{
 	//background: url("../../assets/images/banner.png");
 	//background: url("<%= image_tag("banner.png") %>");
-	background-image: url("banner.png");
+	background-image: url(asset-path("banner.png"));
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

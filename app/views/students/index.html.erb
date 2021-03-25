@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Students</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birth city</th>
+      <th>Birth state</th>
+      <th>Birth date</th>
+      <th>Address street</th>
+      <th>Address number</th>
+      <th>Address complex</th>
+      <th>Address cp</th>
+      <th>Address phone</th>
+      <th>Email</th>
+      <th>Facebook</th>
+      <th>Personal phone</th>
+      <th>Father name</th>
+      <th>Father live</th>
+      <th>Father occupation</th>
+      <th>Father phone</th>
+      <th>Mother name</th>
+      <th>Mother live</th>
+      <th>Mother occupation</th>
+      <th>Mother phone</th>
+      <th>Tutor name</th>
+      <th>Tutor parenthood</th>
+      <th>Previous school</th>
+      <th>Previous school type</th>
+      <th>Scolarship</th>
+      <th>Security institution</th>
+      <th>Medical condition</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.birth_city %></td>
+        <td><%= student.birth_state %></td>
+        <td><%= student.birth_date %></td>
+        <td><%= student.address_street %></td>
+        <td><%= student.address_number %></td>
+        <td><%= student.address_complex %></td>
+        <td><%= student.address_cp %></td>
+        <td><%= student.address_phone %></td>
+        <td><%= student.email %></td>
+        <td><%= student.facebook %></td>
+        <td><%= student.personal_phone %></td>
+        <td><%= student.father_name %></td>
+        <td><%= student.father_live %></td>
+        <td><%= student.father_occupation %></td>
+        <td><%= student.father_phone %></td>
+        <td><%= student.mother_name %></td>
+        <td><%= student.mother_live %></td>
+        <td><%= student.mother_occupation %></td>
+        <td><%= student.mother_phone %></td>
+        <td><%= student.tutor_name %></td>
+        <td><%= student.tutor_parenthood %></td>
+        <td><%= student.previous_school %></td>
+        <td><%= student.previous_school_type %></td>
+        <td><%= student.scolarship %></td>
+        <td><%= student.security_institution %></td>
+        <td><%= student.medical_condition %></td>
+        <td><%= link_to 'Show', student %></td>
+        <td><%= link_to 'Edit', edit_student_path(student) %></td>
+        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Student', new_student_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :students
   root 'static_pages#main'
 
   get 'static_pages/informacion', as: 'informacion'

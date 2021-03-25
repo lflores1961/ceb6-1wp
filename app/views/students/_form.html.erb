@@ -1,0 +1,152 @@
+<%= form_with(model: student) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+        <% student.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_city %>
+    <%= form.text_field :birth_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_state %>
+    <%= form.text_field :birth_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_date %>
+    <%= form.date_select :birth_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_street %>
+    <%= form.text_field :address_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_number %>
+    <%= form.text_field :address_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_complex %>
+    <%= form.text_field :address_complex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_cp %>
+    <%= form.text_field :address_cp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_phone %>
+    <%= form.text_field :address_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facebook %>
+    <%= form.text_field :facebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :personal_phone %>
+    <%= form.text_field :personal_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :father_name %>
+    <%= form.text_field :father_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :father_live %>
+    <%= form.check_box :father_live %>
+  </div>
+
+  <div class="field">
+    <%= form.label :father_occupation %>
+    <%= form.text_field :father_occupation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :father_phone %>
+    <%= form.text_field :father_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mother_name %>
+    <%= form.text_field :mother_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mother_live %>
+    <%= form.check_box :mother_live %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mother_occupation %>
+    <%= form.text_field :mother_occupation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mother_phone %>
+    <%= form.text_field :mother_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tutor_name %>
+    <%= form.text_field :tutor_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tutor_parenthood %>
+    <%= form.text_field :tutor_parenthood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :previous_school %>
+    <%= form.text_field :previous_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :previous_school_type %>
+    <%= form.text_field :previous_school_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scolarship %>
+    <%= form.text_field :scolarship %>
+  </div>
+
+  <div class="field">
+    <%= form.label :security_institution %>
+    <%= form.text_field :security_institution %>
+  </div>
+
+  <div class="field">
+    <%= form.label :medical_condition %>
+    <%= form.text_area :medical_condition %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

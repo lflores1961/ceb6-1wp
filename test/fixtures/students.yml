@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  birth_city: MyString
+  birth_state: MyString
+  birth_date: 2021-03-24
+  address_street: MyString
+  address_number: MyString
+  address_complex: MyString
+  address_cp: MyString
+  address_phone: MyString
+  email: MyString
+  facebook: MyString
+  personal_phone: MyString
+  father_name: MyString
+  father_live: false
+  father_occupation: MyString
+  father_phone: MyString
+  mother_name: MyString
+  mother_live: false
+  mother_occupation: MyString
+  mother_phone: MyString
+  tutor_name: MyString
+  tutor_parenthood: MyString
+  previous_school: MyString
+  previous_school_type: MyString
+  scolarship: MyString
+  security_institution: MyString
+  medical_condition: MyText
+
+two:
+  name: MyString
+  birth_city: MyString
+  birth_state: MyString
+  birth_date: 2021-03-24
+  address_street: MyString
+  address_number: MyString
+  address_complex: MyString
+  address_cp: MyString
+  address_phone: MyString
+  email: MyString
+  facebook: MyString
+  personal_phone: MyString
+  father_name: MyString
+  father_live: false
+  father_occupation: MyString
+  father_phone: MyString
+  mother_name: MyString
+  mother_live: false
+  mother_occupation: MyString
+  mother_phone: MyString
+  tutor_name: MyString
+  tutor_parenthood: MyString
+  previous_school: MyString
+  previous_school_type: MyString
+  scolarship: MyString
+  security_institution: MyString
+  medical_condition: MyText
