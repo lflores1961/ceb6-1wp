@@ -1,152 +1,181 @@
-<%= form_with(model: student) do |form| %>
-  <% if student.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+<%= bootstrap_form_for(@student) do |f| %>
+<div class="field">
+  <%= f.text_field :name, label: "Nombre", class: "form-control-sm" %>
+</div>
 
-      <ul>
-        <% student.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+<div class="form-group">
+  <div class="form-row">
+    <div class="col-md-6">
+      <div class="field">
+        <%= f.text_field :birth_city, label: "Ciudad de Nacimiento", class: "form-control-sm" %>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <div class="col-md-6">
+      <div class="field">
+      <%= f.select :birth_state, @estadosMX, { label: "Estado" } %>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :birth_city %>
-    <%= form.text_field :birth_city %>
+<div class="form-row">
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.date_select :birth_date, label: "Fecha de Nacimiento", class: "form-control-sm", layout: :inline %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :birth_state %>
-    <%= form.text_field :birth_state %>
+<div class="row">
+  <div class="col-md-10">
+    <div class="field">
+      <%= f.text_field :address_street, label: "Calle", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :birth_date %>
-    <%= form.date_select :birth_date %>
+  <div class="col-md-2">
+    <div class="field">
+      <%= f.text_field :address_number, label: "No.", class: "form-control-sm" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :address_street %>
-    <%= form.text_field :address_street %>
+<div class="form-row">
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.text_field :address_complex, label: "Colonia", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :address_number %>
-    <%= form.text_field :address_number %>
+  <div class="col-md-2">
+    <div class="field">
+      <%= f.text_field :address_cp, label: "C. P.", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :address_complex %>
-    <%= form.text_field :address_complex %>
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.text_field :address_phone, label: "Teléfono de casa", class: "form-control-sm" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :address_cp %>
-    <%= form.text_field :address_cp %>
+<div class="form-row">
+  
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.text_field :email, label: "Email", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :address_phone %>
-    <%= form.text_field :address_phone %>
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.text_field :facebook, label: "Facebook", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="col-md-4">
+    <div class="field">
+    <%= f.text_field :personal_phone, label: "Celular", class: "form-control-sm" %>
   </div>
-
-  <div class="field">
-    <%= form.label :facebook %>
-    <%= form.text_field :facebook %>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :personal_phone %>
-    <%= form.text_field :personal_phone %>
+<div class="row">
+  <div class="col-md-8">
+    <div class="field">
+      <%= f.text_field :father_name, label: "Nombre del Padre", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :father_name %>
-    <%= form.text_field :father_name %>
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.check_box :father_live, label: "¿Vive?" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :father_live %>
-    <%= form.check_box :father_live %>
+<div class="row">
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.text_field :father_occupation, label: "Ocupación", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :father_occupation %>
-    <%= form.text_field :father_occupation %>
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.text_field :father_phone, label: "Celular del Padre", class: "form-control-sm" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :father_phone %>
-    <%= form.text_field :father_phone %>
+<div class="row">
+  <div class="col-md-8">
+    <div class="field">
+      <%= f.text_field :mother_name, label: "Nombre de la Madre", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :mother_name %>
-    <%= form.text_field :mother_name %>
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.check_box :mother_live, label: "¿Vive?" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :mother_live %>
-    <%= form.check_box :mother_live %>
+<div class="row">
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.text_field :mother_occupation, label: "Ocupación", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :mother_occupation %>
-    <%= form.text_field :mother_occupation %>
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.text_field :mother_phone, label: "Celular de la Madre", class: "form-control-sm" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :mother_phone %>
-    <%= form.text_field :mother_phone %>
+<div class="row">
+  <div class="col-md-8">
+    <div class="field">
+      <%= f.text_field :tutor_name, label: "Nombre del Tutor", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :tutor_name %>
-    <%= form.text_field :tutor_name %>
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.text_field :tutor_parenthood, label: "Parentesco", class: "form-control-sm" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :tutor_parenthood %>
-    <%= form.text_field :tutor_parenthood %>
+<div class="row">
+  <div class="col-md-6">
+    <div class="field">
+      <%= f.text_field :previous_school, label: "Institución de Procedencia", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :previous_school %>
-    <%= form.text_field :previous_school %>
+  <div class="col-md-2">
+    <div class="field">
+      <%= f.select :previous_school_type, [["Técnica", "Técnica"], ["General", "General"], ["Privada", "Privada"]], { label: "Tipo de Escuela", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :previous_school_type %>
-    <%= form.text_field :previous_school_type %>
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.text_field :scolarship, label: "¿Cuenta con algún tipo de Beca?", class: "form-control-sm" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :scolarship %>
-    <%= form.text_field :scolarship %>
+</div>
+  
+<div class="row">
+  <div class="col-md-4">
+    <div class="field">
+      <%= f.select :security_institution, [["ISSSTE", "ISSSTE"], ["IMSS", "IMSS"], ["SSA", "SSA"], ["Otro", "Otro"]], { label: "¿Cuenta con algún servicio Medico?", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :security_institution %>
-    <%= form.text_field :security_institution %>
+  <div class="col-md-8">
+    <div class="field">
+      <%= f.text_area :medical_condition, label: "¿Recibe actualmente algún tratamiento Médico?", class: "form-control-sm" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :medical_condition %>
-    <%= form.text_area :medical_condition %>
-  </div>
-
+<div class="row">
   <div class="actions">
-    <%= form.submit %>
+    <%= f.submit "Crear" %>
   </div>
+</div>
+
 <% end %>
