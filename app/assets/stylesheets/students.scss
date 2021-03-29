@@ -2,15 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .control-box {
-  padding: 0px 25px 20px;
+  padding: 0px 20px 10px;
   border: 2px solid #8fc5f1;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   background: rgb(223, 237, 247);
   border-radius: 4px;
   h4 {
     padding: 0;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    margin-top: -5px;
+    margin-bottom: 10px;
     // float: left;
     color: darkgoldenrod;
     position: relative;
@@ -18,4 +18,14 @@
     left: 0px;
     z-index: +1;
   }
+  span {
+    font-size: 1.2em;
+    border: 1px solid #3a4d5e;
+    border-radius: 5px;
+    padding: 1px 10px;
+  }
+}
+
+.pdf {
+  background-image: image('escudoCEB61.png');
 }

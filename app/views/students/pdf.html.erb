@@ -1,0 +1,189 @@
+<h1>Centro de Estudios de Bachillerato 6-1</h1>
+<h2>Aguascalientes</h2>
+<div class="container pdf">
+  <%= bootstrap_form_tag do |f| %>
+
+  <div class="control-box">
+    <h4>Datos Personales</h4>
+    <div class="field">
+      <%= f.text_field :name, label: "Nombre", value: @student.name, class: "form-control-sm" %>
+    </div>
+    <div class="form-row">
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :email, label: "Email", value: @student.email, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :facebook, label: "Facebook", value: @student.facebook, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+        <%= f.text_field :personal_phone, label: "Celular", value: @student.personal_phone, class: "form-control-sm" %>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group control-box">
+    <h4>Datos de Nacimiento</h4>
+    <div class="form-row">
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :birth_city, label: "Ciudad de Nacimiento", value: @student.birth_city, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="field">
+        <%= f.text_field :birth_state, label: "Estado", value: @student.birth_state, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :birth_date, label: "Fecha de Nacimiento", value: @student.birth_date, class: "form-control-sm", layout: :inline %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="control-box">
+    <h4>Domicilio</h4>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="field">
+          <%= f.text_field :address_street, label: "Calle", value: @student.address_street, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="field">
+          <%= f.text_field :address_number, label: "No.", value: @student.address_number, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :address_complex, label: "Colonia", value: @student.address_complex, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="field">
+          <%= f.text_field :address_cp, label: "C. P.", value: @student.address_cp, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :address_phone, label: "Teléfono de casa", value: @student.address_phone, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="control-box">
+    <h4>Padres y/o Tutor</h4>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="field">
+          <%= f.text_field :father_name, label: "Nombre del Padre", value: @student.father_name, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :father_live, label: "¿Vive?", value: @student.father_live == true ? 'Si' : 'No' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :father_occupation, label: "Ocupación", value: @student.father_occupation, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :father_phone, label: "Celular del Padre", value: @student.father_phone, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="field">
+          <%= f.text_field :mother_name, label: "Nombre de la Madre", value: @student.mother_name, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :mother_live, label: "¿Vive?", value: @student.mother_live == true ? 'Si' : 'No' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :mother_occupation, label: "Ocupación", value: @student.mother_occupation, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :mother_phone, label: "Celular de la Madre", value: @student.mother_phone, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="field">
+          <%= f.text_field :tutor_name, label: "Nombre del Tutor", value: @student.tutor_name, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :tutor_parenthood, label: "Parentesco", value: @student.tutor_parenthood, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="control-box">
+    <h4>Estudios previos</h4>
+    <div class="form-row">
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.text_field :previous_school, label: "Institución de Procedencia", value: @student.previous_school, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="field">
+          <%= f.text_field :previous_school_type, label: "Tipo de Escuela", value: @student.previous_school_type, class: 'form-control-sm' %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.text_field :scolarship, label: "¿Cuenta con algún tipo de Beca?", value: @student.scolarship, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="control-box">
+    <h4>Seguridad Social</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="field">
+          <%= f.select :security_institution, label: "¿Cuenta con algún servicio Medico?", value: @student.security_institution, class: "form-control-sm" %>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="field">
+          <%= f.text_area :medical_condition, label: "¿Recibe actualmente algún tratamiento Médico?", value: @student.medical_condition, class: "form-control-sm" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+</div>

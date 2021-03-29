@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   resources :students
+  controller :students do
+    get '/convert/:id', to: 'students#convert', as: 'convert'
+    get '/pdf/:id', to: 'students#pdf', as: 'pdf'
+  end
   root 'static_pages#main'
 
   get 'static_pages/informacion', as: 'informacion'

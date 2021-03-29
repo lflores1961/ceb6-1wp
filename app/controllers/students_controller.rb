@@ -1,9 +1,23 @@
 class StudentsController < ApplicationController
-  before_action :set_student, only: %i[ show edit update destroy ]
+  before_action :set_student, only: %i[ show edit update destroy pdf ]
 
   # GET /students or /students.json
   def index
     @students = Student.all
+  end
+
+  # GET /pdf
+  def pdf
+  	# this method will be called by Dhalang
+  end
+
+  # GET /convert
+  def convert
+  	_url = request.base_url + pdf_path
+  	_pdf = Dhalang::PDF.get_from_url(_url)
+  	_file_name = "CEBcedulaInscripcion"
+    File.open("#{Rails.root}/public/#{_file_name}.pdf", "w+b") << _pdf
+	  redirect_to "/#{_file_name}.pdf"
   end
 
   # GET /students/1 or /students/1.json

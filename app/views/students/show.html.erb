@@ -1,139 +1,189 @@
-<p id="notice"><%= notice %></p>
+<div class="container  col-md-10">
+  <h2>CENTRO DE ESTUDIOS DE BACHILLERATO 6-1</h2>
+  <h3>AGUASCALIENTES</h3>
+  <%= link_to "CONVERT TO PDF", convert_path(@student), target: "_blank" %>
+  <div class="control-box">
+    <h4>Datos Personales</h4>
+    <p>
+      Nombre: <span><%= @student.name %></span>
+    </p>
+    <div class="row">
+      <div class="col-md-4">
+        <p>
+          Email:  <span><%= @student.email %></span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          Facebook: <span><%= @student.facebook %></span>
+        </p>  
+      </div>
+      <div class="col-md-4">
+        <p>
+          Teléfono personal: <span><%= @student.personal_phone %></span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @student.name %>
-</p>
+  <div class="form-group control-box">
+    <h4>Datos de Nacimiento</h4>
+    <div class="form-row">
+      <div class="col-md-6">
+        <p>
+          Ciudad: <span><%= @student.birth_city %></span>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          Estado: <span><%= @student.birth_state %></span>
+        </p>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6">
+        <p>
+         Fecha de Nacimiento: <span><%= @student.birth_date %></span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Birth city:</strong>
-  <%= @student.birth_city %>
-</p>
+  <div class="control-box">
+    <h4>Domicilio</h4>
+    <div class="row">
+      <div class="col-md-10">
+        <p>
+          Calle: <span><%= @student.address_street %></span>
+        </p>
+      </div>
+      <div class="col-md-2">
+        <p>
+          Número: <span><%= @student.address_number %></span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          Colonia: <span><%= @student.address_complex %></span>
+        </p>
+      </div>
+      <div class="col-md-2">
+        <p>
+          Código Postal: <span><%= @student.address_cp %></span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          Teléfono de casa: <span><%= @student.address_phone %></span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Birth state:</strong>
-  <%= @student.birth_state %>
-</p>
+  <div class="control-box">
+    <h4>Padres y/o Tutor</h4>
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          Nombre del Padre: <span><%= @student.father_name %></span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          ¿Vive? <span><%= @student.father_live == true ? 'Si' : 'No' %></span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          Ocupación <span><%= @student.father_occupation %></span>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          Celular del Padre: <span><%= @student.father_phone %></span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          Nombre de la Madre: <span><%= @student.mother_name %></span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          ¿Vive? <span><%= @student.mother_live == true ? 'Si' : 'No' %></span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          Ocupación: <span><%= @student.mother_occupation %></span>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          Celular de la Madre: <span><%= @student.mother_phone %></span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          Nombre del Tutor: <span><%= @student.tutor_name %></span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          Parentesco: <span><%= @student.tutor_parenthood %></span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Birth date:</strong>
-  <%= @student.birth_date %>
-</p>
+  <div class="control-box">
+    <h4>Estudios previos</h4>
+    <div class="form-row">
+      <div class="col-md-6">
+        <p>
+          Institución de Procedencia: <span><%= @student.previous_school %></span>
+        </p>
+      </div>
+      <div class="col-md-2">
+        <p>
+          Tipo de Escuela: <span><%= @student.previous_school_type %></span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          ¿Cuenta con algún tipo de Beca? <span><%= @student.scolarship %></span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Address street:</strong>
-  <%= @student.address_street %>
-</p>
+  <div class="control-box">
+  <h4>Seguridad Social</h4>
+  <div class="row">
+    <div class="col-md-4">
+      <p>
+        ¿Cuenta con algún servicio Medico? <span><%= @student.security_institution %></span>
+      </p>
+    </div>
+    <div class="col-md-8">
+      <p>
+        ¿Recibe actualmente algún tratamiento Médico? <span><%= @student.medical_condition %></span>
+      </p>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Address number:</strong>
-  <%= @student.address_number %>
-</p>
-
-<p>
-  <strong>Address complex:</strong>
-  <%= @student.address_complex %>
-</p>
-
-<p>
-  <strong>Address cp:</strong>
-  <%= @student.address_cp %>
-</p>
-
-<p>
-  <strong>Address phone:</strong>
-  <%= @student.address_phone %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @student.email %>
-</p>
-
-<p>
-  <strong>Facebook:</strong>
-  <%= @student.facebook %>
-</p>
-
-<p>
-  <strong>Personal phone:</strong>
-  <%= @student.personal_phone %>
-</p>
-
-<p>
-  <strong>Father name:</strong>
-  <%= @student.father_name %>
-</p>
-
-<p>
-  <strong>Father live:</strong>
-  <%= @student.father_live %>
-</p>
-
-<p>
-  <strong>Father occupation:</strong>
-  <%= @student.father_occupation %>
-</p>
-
-<p>
-  <strong>Father phone:</strong>
-  <%= @student.father_phone %>
-</p>
-
-<p>
-  <strong>Mother name:</strong>
-  <%= @student.mother_name %>
-</p>
-
-<p>
-  <strong>Mother live:</strong>
-  <%= @student.mother_live %>
-</p>
-
-<p>
-  <strong>Mother occupation:</strong>
-  <%= @student.mother_occupation %>
-</p>
-
-<p>
-  <strong>Mother phone:</strong>
-  <%= @student.mother_phone %>
-</p>
-
-<p>
-  <strong>Tutor name:</strong>
-  <%= @student.tutor_name %>
-</p>
-
-<p>
-  <strong>Tutor parenthood:</strong>
-  <%= @student.tutor_parenthood %>
-</p>
-
-<p>
-  <strong>Previous school:</strong>
-  <%= @student.previous_school %>
-</p>
-
-<p>
-  <strong>Previous school type:</strong>
-  <%= @student.previous_school_type %>
-</p>
-
-<p>
-  <strong>Scolarship:</strong>
-  <%= @student.scolarship %>
-</p>
-
-<p>
-  <strong>Security institution:</strong>
-  <%= @student.security_institution %>
-</p>
-
-<p>
-  <strong>Medical condition:</strong>
-  <%= @student.medical_condition %>
-</p>
+</div>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
