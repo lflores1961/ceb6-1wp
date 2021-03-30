@@ -1,16 +1,18 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <div class="navbar navbar-brand">
-      <%= image_tag "escudoCEB61.png", size: "70x70" %>
+      <%= link_to root_path do %>
+        <%= image_tag "escudoCEB61.png", size: "70x70" %>
+      <% end %>
       <div id="logo" data-toggle="dropdown">
         CEB 6-1
       </div>
       <ul class="dropdown-menu" role="menu">
         <li><a class="dropdown-item" href=<%= root_path %>>Misión</a></li>
-        <li><a class="dropdown-item" href="#">Visión</a></li>
-        <li><a class="dropdown-item" href="#">Organigrama</a></li>
+        <li><a class="dropdown-item" href=<%= "#{root_path}#vision" %>>Visión</a></li>
+        <li><a class="dropdown-item" href=<%= "#{root_path}#organigrama" %>>Organigrama</a></li>
         <li><a class="dropdown-item" href="#">Comité de Padres de Familia</a></li>
-        <li><a class="dropdown-item" href="#">Red de Seguridad</a></li>
+        <li><a class="dropdown-item" href=<%= "#{root_path}#seguridad" %>>Red de Seguridad</a></li>
         <li><a class="dropdown-item" href="#">Transparencia</a></li>
         
       </ul>
@@ -24,8 +26,8 @@
           </button>
           <ul class="dropdown-menu" role="menu">
             <li><a class="dropdown-item" href=<%= informacion_path %>>Calendarios -</a></li>
-            <li><a class="dropdown-item" href=<%= informacion_path %>>Mapas Curriculares -</a></li>
-            <li><a class="dropdown-item" href=<%= informacion_path %>>Horarios -</a></li>
+            <li><a class="dropdown-item" href=<%= "#{informacion_path}#mapas" %>>Mapas Curriculares -</a></li>
+            <li><a class="dropdown-item" href=<%= "#{informacion_path}#horarios" %>>Horarios -</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -35,8 +37,8 @@
           </button>
           <ul class="dropdown-menu" role="menu">
             <li><a class="dropdown-item" href=<%= new_student_path %>>Nuevo Ingreso</a></li>
-            <li><a class="dropdown-item" href="#">Becas</a></li>
-            <li><a class="dropdown-item" href="#">Orientación Educativa</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Becas</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Orientación Educativa</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -45,9 +47,9 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu">
-            <li><a class="dropdown-item" href="#">Certificados</a></li>
-            <li><a class="dropdown-item" href="#">Historiales Académicos</a></li>
-            <li><a class="dropdown-item" href="#">Bajas</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Certificados</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Historiales Académicos</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Bajas</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -56,12 +58,12 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu">
-            <li><a class="dropdown-item" href="#">Primer Semestre</a></li>
-            <li><a class="dropdown-item" href="#">Segundo Semestre</a></li>
-            <li><a class="dropdown-item" href="#">Tercer Semestre</a></li>
-            <li><a class="dropdown-item" href="#">Cuarto Semestre</a></li>
-            <li><a class="dropdown-item" href="#">Quinto Semestre</a></li>
-            <li><a class="dropdown-item" href="#">Sexto Semestre</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Primer Semestre</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Segundo Semestre</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Tercer Semestre</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Cuarto Semestre</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Quinto Semestre</a></li>
+            <li><a class="dropdown-item" href=<%= under_const_path %>>Sexto Semestre</a></li>
           </ul>
         </li>
       </ul>

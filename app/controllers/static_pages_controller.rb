@@ -5,6 +5,10 @@ class StaticPagesController < ApplicationController
   def informacion
   end
 
+  def privacidad
+  end
+  
+
   def servicios
   end
 
@@ -13,4 +17,9 @@ class StaticPagesController < ApplicationController
 
   def virtual
   end
+
+  def under_const
+    
+  end
+  
 end

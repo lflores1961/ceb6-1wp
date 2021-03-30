@@ -48,14 +48,18 @@
                 </div>
             </div><!-- end title -->
         
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="mision">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
                         <h4>CEB 6-1</h4>
                         <h2>Misión</h2>
-                        <p>Brindar un espacio educativo de calidad, donde se formen jóvenes comprometidos con su entorno, desarrollando competencias además de atender sus dimensiones axiológicas, físicas, sociales y cognitivas que les permitan incorporarse a la educación superior y/o al trabajo productivo. .</p>
+                        <p>Brindar un espacio educativo de calidad, donde se formen jóvenes comprometidos con su entorno, desarrollando competencias además de atender sus dimensiones axiológicas, físicas, sociales y cognitivas que les permitan incorporarse a la educación superior y/o al trabajo productivo.</p>
 
-                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                        <%
+=begin%>
+ <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> 
+<%
+=end%>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 				
@@ -65,7 +69,7 @@
                     </div><!-- end media -->
                 </div><!-- end col -->
 			</div>
-			<div class="row align-items-center">
+			<div class="row align-items-center" id="vision">
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
                       <%= image_tag("compusdos.png", size: "390x300", class: "img-fluid img-rounded") %>
@@ -77,20 +81,44 @@
                         <h2>Visión</h2>
                         <p>Contribuir al desarrollo científico y tecnológico de la sociedad, sustentando en los conocimientos, habilidades, valores y actitudes de nuestros egresados que favorezcan la calidad en las relaciones humanas.</p>
 
-                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                        <%
+=begin%>
+ <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> 
+<%
+=end%>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 				
             </div><!-- end row -->
         </div><!-- end container -->
-        <div style="margin-top:10px;">
+      <div id="organigrama" style="margin-top:10px;">
         <hr>
-          <h1>Organigrama</h1>
-          <%= render "orgchart" %>
-        </div>
-        <div style="margin-top:10px;">
+        <div class="row">
+				  <div class="col">
+					  <h2>ORGANIGRAMA</h2>
+				  </div>
+				  <div class="col">
+					  <a href=<%= root_path %>>
+						  Regresar
+						  <i class="fa fa-level-up" aria-hidden="true"></i>
+					  </a>
+				  </div>
+			  </div>
+        <%= render "orgchart" %>
+      </div>
+      <div id="seguridad" style="margin-top:10px;">
         <hr>
-          <h1>Consejo de Seguridad</h1>
-          <%= render "seguridad" %>
-        </div>
+        <div class="row">
+				  <div class="col">
+					  <h2>CONSEJO DE SEGURIDAD</h2>
+				  </div>
+				  <div class="col">
+					  <a href=<%= root_path %>>
+						  Regresar
+						  <i class="fa fa-level-up" aria-hidden="true"></i>
+					  </a>
+				  </div>
+			  </div>
+        <%= render "seguridad" %>
+      </div>
     </div><!-- end section -->

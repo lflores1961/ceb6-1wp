@@ -1,3 +1,4 @@
+ 
 <%= bootstrap_form_for(@student) do |f| %>
 
 <div class="control-box">
@@ -41,7 +42,7 @@
   <div class="form-row">
     <div class="col-md-6">
       <div class="field">
-        <%= f.date_select :birth_date, label: "Fecha de Nacimiento", class: "form-control-sm", layout: :inline %>
+        <%= f.date_select :birth_date, label: "Fecha de Nacimiento", class: "form-control-sm", layout: :inline, start_year: 2000 %>
       </div>
     </div>
   </div>
@@ -182,11 +183,14 @@
   </div>
 </div>
 
+
+
 <div class="container center">
-<div class="row">
-  <div class="actions">
-    <%= f.submit "Imprimir Formato" %>
+  <div class="row">
+    <div class="actions">
+      <%= f.submit "Generar PDF" %>
+    </div>
   </div>
-</div>
-</div>
+</div> 
+
 <% end %>

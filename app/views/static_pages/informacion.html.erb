@@ -12,89 +12,103 @@
       </div>
     </div><!-- end title -->
 
-    <hr class="invis"> 
-		<%= render 'calendar' %>
-		<h2>MAPAS CURRICULARES</h2>
-    <div class="row"> 
-        <div class="course-item">
-					
-					<div class="course-br">
-						<div class="course-title">
-							<h2><a href="#" title="">TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN</a></h2>
-						</div>
-						<div class="image-blog">
-							<%= image_tag "informatica.png" %>
-							<!-- <img src="informatica.png" alt="" class="img-fluid"> -->
-						</div>
-						<div class="course-desc">
-							<p>MAPA CURRICULAR DEL BACHILLERATO GENERAL CON UN ENFOQUE EDUCATIVO BASADO EN EL DESARROLLO DE COMPETENCIAS CAPACITACIÓN PARA EL TRABAJO EN: TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN</p>
-						</div>
-
-					</div>
-					<div class="course-meta-bot">
-						<ul>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Meses</li>
-							<li><i class="fa fa-users" aria-hidden="true"></i> 56 Estudiantes</li>
-							<li><i class="fa fa-book" aria-hidden="true"></i> 7 Libros</li>
-						</ul>
-					</div>
+    <hr class="invis">
+		<div id="calendar">
+			<%= render 'calendar' %>
+		</div>
+		<div id="mapas">
+			<div class="row">
+				<div class="col">
+					<h2>MAPAS CURRICULARES</h2>
 				</div>
-    </div><!-- end row -->
-			
-		<hr class="hr3"> 
-	
-		<div class="row"> 
-        <div class="course-item">
-					
-					<div class="course-br">
-						<div class="course-title">
-							<h2><a href="#" title="">ADMINISTRACIÓN</a></h2>
-						</div>
-						<div class="image-blog">
-							<%= image_tag "administracion.png" %>
-							<!-- <img src="informatica.png" alt="" class="img-fluid"> -->
-						</div>
-						<div class="course-desc">
-							<p>MAPA CURRICULAR DEL BACHILLERATO GENERAL CON UN ENFOQUE EDUCATIVO BASADO EN EL DESARROLLO DE COMPETENCIAS CAPACITACIÓN PARA EL TRABAJO EN: ADMINISTRACIÓN</p>
-						</div>
-
-					</div>
-					<div class="course-meta-bot">
-						<ul>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Meses</li>
-							<li><i class="fa fa-users" aria-hidden="true"></i> 60 Estudiantes</li>
-							<li><i class="fa fa-book" aria-hidden="true"></i> 8 Libros</li>
-						</ul>
-					</div>
+				<div class="col">
+					<a href=<%= informacion_path %>>
+						Regresar
+						<i class="fa fa-level-up" aria-hidden="true"></i>
+					</a>
 				</div>
-    </div><!-- end row -->
+			</div>
+			<div class="row"> 
+					<div class="course-item">
+						
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN</a></h2>
+							</div>
+							<div class="image-blog">
+								<%= image_tag "informatica.png" %>
+								<!-- <img src="informatica.png" alt="" class="img-fluid"> -->
+							</div>
+							<div class="course-desc">
+								<p>MAPA CURRICULAR DEL BACHILLERATO GENERAL CON UN ENFOQUE EDUCATIVO BASADO EN EL DESARROLLO DE COMPETENCIAS CAPACITACIÓN PARA EL TRABAJO EN: TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN</p>
+							</div>
 
-		<hr class="hr3"> 
-	
-		<div class="row"> 
-        <div class="course-item">
-					
-					<div class="course-br">
-						<div class="course-title">
-							<h2><a href="#" title="">INTERVENCIÓN EN LA EDUCACIÓN OBLIGATORIA</a></h2>
 						</div>
-						<div class="image-blog">
-							<%= image_tag "intervencion.png" %>
-							<!-- <img src="informatica.png" alt="" class="img-fluid"> -->
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Libros</li>
+							</ul>
 						</div>
-						<div class="course-desc">
-							<p>MAPA CURRICULAR DEL BACHILLERATO GENERAL CON UN ENFOQUE EDUCATIVO BASADO EN EL DESARROLLO DE COMPETENCIAS CAPACITACIÓN PARA EL TRABAJO EN: INTERVENCIÓN EN LA EDUCACIÓN OBLIGATORIA</p>
-						</div>
+					</div>
+			</div><!-- end row -->
+				
+			<hr class="hr3"> 
+		
+			<div class="row"> 
+					<div class="course-item">
+						
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">ADMINISTRACIÓN</a></h2>
+							</div>
+							<div class="image-blog">
+								<%= image_tag "administracion.png" %>
+								<!-- <img src="informatica.png" alt="" class="img-fluid"> -->
+							</div>
+							<div class="course-desc">
+								<p>MAPA CURRICULAR DEL BACHILLERATO GENERAL CON UN ENFOQUE EDUCATIVO BASADO EN EL DESARROLLO DE COMPETENCIAS CAPACITACIÓN PARA EL TRABAJO EN: ADMINISTRACIÓN</p>
+							</div>
 
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 60 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 8 Libros</li>
+							</ul>
+						</div>
 					</div>
-					<div class="course-meta-bot">
-						<ul>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Meses</li>
-							<li><i class="fa fa-users" aria-hidden="true"></i> 60 Estudiantes</li>
-							<li><i class="fa fa-book" aria-hidden="true"></i> 8 Libros</li>
-						</ul>
+			</div><!-- end row -->
+
+			<hr class="hr3"> 
+		
+			<div class="row"> 
+					<div class="course-item">
+						
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">INTERVENCIÓN EN LA EDUCACIÓN OBLIGATORIA</a></h2>
+							</div>
+							<div class="image-blog">
+								<%= image_tag "intervencion.png" %>
+								<!-- <img src="informatica.png" alt="" class="img-fluid"> -->
+							</div>
+							<div class="course-desc">
+								<p>MAPA CURRICULAR DEL BACHILLERATO GENERAL CON UN ENFOQUE EDUCATIVO BASADO EN EL DESARROLLO DE COMPETENCIAS CAPACITACIÓN PARA EL TRABAJO EN: INTERVENCIÓN EN LA EDUCACIÓN OBLIGATORIA</p>
+							</div>
+
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 60 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 8 Libros</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-    </div><!-- end row -->
+			</div><!-- end row -->
+		</div>
   </div><!-- end container -->
 </div><!-- end section -->
