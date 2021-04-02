@@ -26,6 +26,58 @@
   }
 }
 
-.pdf {
-  background-image: image('escudoCEB61.png');
+.nuevo-ingreso {
+  margin: auto;
+  min-height: 600px;
+  p {
+    line-height: 1.2em;
+    font-size: 1.4em;
+  }
+  ol {
+    list-style: upper-alpha;
+    font-size: 1.2rem;
+  }
+  .documentacion {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+.container.pdf {
+  background-image: url(asset-path('escudoCEB61WaterMark.png'));
+}
+
+section.section-padding.gray-bg {
+  background: #ffffff;
+  padding: 20px 60px ;
+  color: #484848;
+  ul.withArrow {
+    list-style-type: none;
+    color: rgb(6, 91, 160);
+    list-style-position: outside;
+    span {
+      margin-left: -10px;
+    }
+  }
+  
+  a:link, a:visited, a:hover {
+    color: #ffffff;
+  }
+
+  h2 {
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #252525;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.about-text p {
+  font-size: 1.2em;
+  color: rgb(24, 88, 88);
+}
+
+.section-title {
+  padding-bottom: 30px;
 }

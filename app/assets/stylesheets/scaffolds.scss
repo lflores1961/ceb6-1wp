@@ -63,3 +63,16 @@ div.actions {
 
 label {
   display: block; }
+
+.documentacion {
+  p {
+    font-size: 1.2em;
+  }
+  ol {
+    list-style: upper-alpha;
+  }
+}
+
+.documentacion p {
+  font-size: 1.2em;
+}

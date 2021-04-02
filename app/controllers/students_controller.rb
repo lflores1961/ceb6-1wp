@@ -24,6 +24,10 @@ class StudentsController < ApplicationController
   def show
   end
 
+  def nuevo_ingreso
+    
+  end
+  
   # GET /students/new
   def new
     @estadosMX = [

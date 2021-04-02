@@ -77,11 +77,16 @@
   color: #f4f4f4 !important;
 }
 
+.footer-links a:visited,
+.footer a:visited {
+  color: #f4f4f4 !important;
+}
+
 .footer-links li {
   margin-bottom: 5px;
   display: block;
   width: 100%;
-padding: 5px 0px;
+  padding: 5px 0px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
