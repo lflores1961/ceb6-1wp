@@ -74,7 +74,7 @@ span.m_1 {
 }
 
 #testimonials {
-	background-image: url('paralax.jpg');
+	background-image: url(asset-path('paralax.jpg'));
 	position: relative;
 }
 
@@ -151,6 +151,24 @@ tr.higligth {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+.horarios-table {
+	border: 2px solid sandybrown;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	th {
+		background-color: #4c5a7d;
+		color: #ffffff;
+		text-align: center;
+	}
+	td {
+		button .inTablebuton {
+			border-radius: 3px;
+			background-color: mediumturquoise;
+		}
+	}
 }
 
 .message-box {

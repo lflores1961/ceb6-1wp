@@ -1,0 +1,248 @@
+
+<div>
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>HORARIOS PARA SESIONES DE VIDEOLLAMADAS</h2>
+      <table class="centrar-titulos">
+        <tr>
+          <td>
+            <%= image_tag "SEP.png", size: "145x37" %>
+          </td>
+          <td>
+            <h4>Semestre B (Febrero - Julio) Ciclo 2020 - 2021 </h4>
+          </td>
+          <td>
+            <%= image_tag "SubSec.png", size: "145x37" %>
+          </td>
+        </tr>
+      </table>
+      <div class="col">
+					<a href=<%= informacion_path %>>
+						Regresar
+						<i class="fa fa-level-up" aria-hidden="true"></i>
+					</a>
+				</div>
+    </div><!-- end title -->
+    <table class="horarios-table">
+      <thead>
+        <tr>
+          <th>Semestre</th>
+          <th colspan="5">
+            Grupos
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="higligth">
+          <td colspan="6">
+            Turno Matutino
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Segundo
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat201.png" }) do  %>
+                201
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat202.png" }) do  %>
+                202
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat203.png" }) do  %>
+                203
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat204.png" }) do  %>
+                204
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat205.png" }) do  %>
+                205
+            <% end %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Cuarto
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat401.png" }) do  %>
+                401
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat402.png" }) do  %>
+                402
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat403.png" }) do  %>
+                403
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat404.png" }) do  %>
+                404
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat405.png" }) do  %>
+                405
+            <% end %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sexto
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat601.png" }) do  %>
+                601
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat602.png" }) do  %>
+                602
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat603.png" }) do  %>
+                603
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat604.png" }) do  %>
+                604
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat605.png" }) do  %>
+                605
+            <% end %>
+          </td>
+        </tr>
+        <tr class="higligth">
+          <td colspan="6">
+            Turno Vespertino
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Segundo
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp206.png" }) do  %>
+                206
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp207.png" }) do  %>
+                207
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp208.png" }) do  %>
+                208
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            -
+          </td>
+          <td class="text-center align-middle">
+            -
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Cuarto
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp406.png" }) do  %>
+                406
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp407.png" }) do  %>
+                407
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp408.png" }) do  %>
+                408
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            -
+          </td>
+          <td class="text-center align-middle">
+            -
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sexto
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp606.png" }) do  %>
+                606
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp607.png" }) do  %>
+                607
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp608.png" }) do  %>
+                608
+            <% end %>
+          </td>
+          <td class="text-center align-middle">
+            -
+          </td>
+          <td class="text-center align-middle">
+            -
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <table class="centrar-titulos">
+      <tr>
+        <td>
+          <h4>AVISO:</h4>
+          <h5>Los horarios pueden sufrir modificaciones.</h5>
+        </td>
+        <td>
+          <%= image_tag "Mexico2021.png", size: "50x50"%>
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <%= image_tag "" %>
+      </div>
+    </div>
+  </div>
+  <hr class="invis">
+</div>
+
+<script>
+  $(document).ready(function () {
+  $('.btn').click(function (event) {
+    event.preventDefault();
+    $('.modal img').attr('src', $(this).data('imagen'));
+    $('.modal').modal('show');
+  });
+})
+</script>

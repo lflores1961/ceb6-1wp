@@ -1,15 +1,19 @@
 class StaticPagesController < ApplicationController
   def main
+    #used
   end
 
   def informacion
+    #used
   end
 
   def privacidad
+    #used
   end
   
 
   def servicios
+   
   end
 
   def control
