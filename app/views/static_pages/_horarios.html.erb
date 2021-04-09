@@ -17,11 +17,20 @@
         </tr>
       </table>
       <div class="col">
+        <p style="font-size:1.1em;">Para ver los horarios de video llamada haz click sobre el botón del grupo que te hayan asignado, puedes descargarlo haciendo click con el botón derecho de tu 'mouse' y eligiendo 'Grabar Imagen como:' y eligiendo un nombre de fichero y una carpeta para guardar el archivo .png</p>
+      </div>
+      <div class="row">
+        <div class="col">
+           <p>NOTA: A causa de un conflicto con la versión de JavaScript puede ser necesario 'recargar' la página para ver la imagen de los horarios. Gracias.</p>
+        </div>
+        <div class="col">
 					<a href=<%= informacion_path %>>
 						Regresar
 						<i class="fa fa-level-up" aria-hidden="true"></i>
 					</a>
-				</div>
+			  </div>
+      </div>
+      
     </div><!-- end title -->
     <table class="horarios-table">
       <thead>
@@ -43,27 +52,27 @@
             Segundo
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat201.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat201.png") }) do  %>
                 201
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat202.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat202.png") }) do  %>
                 202
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat203.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat203.png") }) do  %>
                 203
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat204.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat204.png") }) do  %>
                 204
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat205.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat205.png") }) do  %>
                 205
             <% end %>
           </td>
@@ -73,27 +82,27 @@
             Cuarto
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat401.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat401.png") }) do  %>
                 401
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat402.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat402.png") }) do  %>
                 402
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat403.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat403.png") }) do  %>
                 403
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat404.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat404.png") }) do  %>
                 404
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat405.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat405.png") }) do  %>
                 405
             <% end %>
           </td>
@@ -103,27 +112,27 @@
             Sexto
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat601.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat601.png") }) do  %>
                 601
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat602.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat602.png") }) do  %>
                 602
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat603.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat603.png") }) do  %>
                 603
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat604.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat604.png") }) do  %>
                 604
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/mat605.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/mat605.png") }) do  %>
                 605
             <% end %>
           </td>
@@ -138,17 +147,17 @@
             Segundo
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp206.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp206.png") }) do  %>
                 206
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp207.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp207.png") }) do  %>
                 207
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp208.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-primary btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp208.png") }) do  %>
                 208
             <% end %>
           </td>
@@ -164,17 +173,17 @@
             Cuarto
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp406.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp406.png") }) do  %>
                 406
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp407.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp407.png") }) do  %>
                 407
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp408.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-success btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp408.png") }) do  %>
                 408
             <% end %>
           </td>
@@ -190,17 +199,17 @@
             Sexto
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp606.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp606.png") }) do  %>
                 606
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp607.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen:  asset_url("grilla/vesp607.png") }) do  %>
                 607
             <% end %>
           </td>
           <td class="text-center align-middle">
-            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: "/assets/grilla/vesp608.png" }) do  %>
+            <%= button_tag( type: 'button', class: "btn btn-info btn-sm", data: { toggle: "modal", target: "#exampleModal", imagen: asset_url("grilla/vesp608.png") }) do  %>
                 608
             <% end %>
           </td>
@@ -236,13 +245,3 @@
   </div>
   <hr class="invis">
 </div>
-
-<script>
-  $(document).ready(function () {
-  $('.btn').click(function (event) {
-    event.preventDefault();
-    $('.modal img').attr('src', $(this).data('imagen'));
-    $('.modal').modal('show');
-  });
-})
-</script>
