@@ -86,7 +86,7 @@ class StudentsController < ApplicationController
     end
     
   end
-
+  
   # PATCH/PUT /students/1 or /students/1.json
   def update
     respond_to do |format|

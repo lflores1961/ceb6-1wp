@@ -1,5 +1,4 @@
 
-<!-- Aquí inicia la sección de prueba -->
 	<section class="section-padding gray-bg">
 		<div class="container">
 			<div class="row">
@@ -62,7 +61,8 @@
                 <li>Comprobante de pago y ficha de asignación de plantel</li>
               </ol>
             </div>
-						<%= link_to "Cédula de Registro", new_student_path, class: "btn btn-success btn-lg", style: "color:#fff;" %>
+						<% puts "The link is: #{new_student_url}" %>
+						<%= link_to "Cédula de Registro", new_student_url, class: "btn btn-success btn-lg", style: "color:#fff;", :data => { :turbolinks => false } %>
 					</div>
 				</div>
 				
