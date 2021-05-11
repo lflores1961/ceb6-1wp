@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'students/nuevo_ingreso', to: 'students#nuevo_ingreso', as: 'nuevo_ingreso'
   resources :students
   controller :students do

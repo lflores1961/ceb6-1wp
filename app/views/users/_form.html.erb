@@ -1,0 +1,36 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table class="horarios-table">
+    <tr class="control-box">
+      <td>Nombre:</td>
+      <td><%= form.text_field :name %></td>
+    </tr>
+    <tr class="control-box">
+      <td>Email:</td>
+      <td><%= form.text_field :email %></td>
+    </tr>
+    <tr class="control-box">
+      <td>Password:</td>
+      <td><%= form.password_field :password %></td>
+    </tr>
+    <tr class="control-box">
+      <td>Confirmar password:</td>
+      <td><%= form.password_field :password_confirmation %></td>
+    </tr>
+    <tr class="control-box">
+      <td colspan="2" style="text-align:center;"><%= form.submit "Crear Usuario"%></td>
+    </tr>
+  </table>
+
+<% end %>
