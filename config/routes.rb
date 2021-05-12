@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get    'login'  => 'sessions#new'
+  post   'login'  => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  get    'menu'   => 'sessions#menu'
   resources :users
   get 'students/nuevo_ingreso', to: 'students#nuevo_ingreso', as: 'nuevo_ingreso'
   resources :students

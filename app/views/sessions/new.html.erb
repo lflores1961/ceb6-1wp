@@ -1,0 +1,29 @@
+<div class="container">
+  <% provide(:title, "Log in") %>
+  <h1>Log in</h1>
+
+   <div class="col">
+    <%= form_for(:session, url: login_path)  do |f| %>
+        <p id="notice"><%= notice %></p>
+      
+      <div style="padding-top: 50px;padding-bottom: 30px;">
+        <table class="show-table">
+
+          <tr>
+            <td><%= f.label :email %></td>
+            <td><%= f.text_field :email %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :password %></td>
+            <td><%= f.password_field :password %></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;"><%= f.submit "Log in", class: "btn-lg success" %></td>
+          </tr>
+        </table>
+      </div>
+      
+    <% end %>
+  </div>
+
+</div>

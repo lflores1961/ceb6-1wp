@@ -16,6 +16,7 @@
 								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                 <li><a href="https://goo.gl/maps/5QVMJJnLoBWeLsma9"><i class="fa fa-map-marker"></i></a></li>
 							</ul><!-- end links -->
+
 						</div>						
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
@@ -27,11 +28,22 @@
                         </div>
                         <ul class="footer-links" style="color:#fff;">
                             <li><a href=<%= root_path %>>Home</a></li>
-                            <li><a href="#">Blog</a></li>
                             <li><a href=<%= privacidad_path %>>Privacidad</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Contact</a></li>
+                            <li>
+                              <% if logged_in? %>
+                                <%= link_to logout_path, method: :delete do %>
+                                  <%= image_tag "TardisBlue.jpg", size: "40x45" %>
+                                <% end %>
+                              <% else %>
+                                <%= link_to login_path do %>
+                                  <%= image_tag "TardisIcon.png", size: "40x45" %>
+                                <% end %>
+                              <% end %>
+                            </li>
                         </ul><!-- end links -->
+
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 				
@@ -47,9 +59,10 @@
                             <li>San Francisco de los Viveros 101, Ojocaliente 1, Aguascalientes, Ags.</li>
                             <li>+52 449 123 4567</li>
                         </ul><!-- end links -->
+                        
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
-				
+
             </div><!-- end row -->
         </div><!-- end container -->
     </footer><!-- end footer -->

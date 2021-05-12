@@ -66,9 +66,23 @@
             <li><a class="dropdown-item" href=<%= under_const_path %>>Sexto Semestre</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-            <a class="dropdown-item" href=<%= '#' %>>Avisos</a>
-        </li> 
+        <% if logged_in? %>
+          <li class="nav-item dropdown">
+            <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+              <span>Gestión</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href=<%= under_const_path %>>Contenidos</a></li>
+              <li><a class="dropdown-item" href=<%= users_path %>>Usuarios</a></li>
+              <li><%= link_to "Log out", logout_path, class: "dropdown-item", method: :delete  %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Avisos", '#' %>
+          </li>
+        <% end %>
       </ul>
     </nav>
 
