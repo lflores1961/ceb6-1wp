@@ -9,11 +9,15 @@
                         <p> Puede llamar al 449 123 4567 en horario de atención: 8:00 a 17:00 Hrs de Lunes a Viernes</p>   
 						<div class="footer-right">
 							<ul class="footer-links-soi">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<%
+=begin%>
+ <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-github"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li> 
+<%
+=end%>
                                 <li><a href="https://goo.gl/maps/5QVMJJnLoBWeLsma9"><i class="fa fa-map-marker"></i></a></li>
 							</ul><!-- end links -->
 
@@ -29,8 +33,12 @@
                         <ul class="footer-links" style="color:#fff;">
                             <li><a href=<%= root_path %>>Home</a></li>
                             <li><a href=<%= privacidad_path %>>Privacidad</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
+							<%
+=begin%>
+ <li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li> 
+<%
+=end%>
                             <li>
                               <% if logged_in? %>
                                 <%= link_to logout_path, method: :delete do %>
@@ -54,8 +62,12 @@
                         </div>
 
                         <ul class="footer-links">
-                            <li><a href="mailto:#">info@yoursite.com</a></li>
-                            <li><a href="#">www.yoursite.com</a></li>
+                            <%
+=begin%>
+ <li><a href="mailto:#">info@yoursite.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li> 
+<%
+=end%>
                             <li>San Francisco de los Viveros 101, Ojocaliente 1, Aguascalientes, Ags.</li>
                             <li>+52 449 123 4567</li>
                         </ul><!-- end links -->
