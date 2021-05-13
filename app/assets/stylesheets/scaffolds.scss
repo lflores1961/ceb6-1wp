@@ -76,3 +76,43 @@ label {
 .documentacion p {
   font-size: 1.2em;
 }
+
+.avisos-title-box{
+	//background: url("../../assets/images/banner.png");
+	//background: url("<%= image_tag("banner.png") %>");
+	background-image: url(asset-path("MITBB.png"));
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	min-height: 300px;
+}
+
+.avisos-title-box h1{
+	color: rgb(15, 57, 92);
+	font-weight: 800;
+	text-transform: capitalize;
+	padding-top: 11%;
+	font-size: 64px;
+	line-height: 0px;
+}
+
+.avisos-page {
+  background-image: url(asset-path("corkBckgnd2.jpg"));
+  padding: 60px;
+  .post {
+    border-style: solid;
+    border-width: 3px;
+    border-color: cornflowerblue;
+    padding: 30px;
+    margin-bottom: 20px;
+    article {
+      font-size: 1.1em;
+      font-weight: bolder;
+    }
+    small {
+      float: right;
+    }
+  }
+}

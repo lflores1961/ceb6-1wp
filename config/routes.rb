@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :microposts
   get    'login'  => 'sessions#new'
   post   'login'  => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
@@ -18,6 +19,7 @@ Rails.application.routes.draw do
   get 'static_pages/control', as: 'control'
   get 'static_pages/virtual', as: 'virtual'
   get 'static_pages/privacidad', as: 'privacidad'
+  get 'static_pages/avisos', as: 'avisos'
   get 'static_pages/under_const', as: 'under_const'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -22,6 +22,11 @@ class StaticPagesController < ApplicationController
   def virtual
   end
 
+  def avisos
+    @avisos = Micropost.all
+  end
+  
+
   def under_const
     
   end

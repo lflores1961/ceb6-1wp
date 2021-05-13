@@ -1,0 +1,31 @@
+<div class="avisos-title-box">
+	<div class="container text-center">
+		<h1>Avisos</h1>
+		<span class="m_1">Avisos para la comunidad académica</span>
+	</div>
+</div>
+<div id="overviews" class="section wb">
+  <div class="container">
+    <%
+=begin%>
+ <div class="row text-center">
+      <div class="col-md-8 offset-md-2">
+        <p class="lead">En esta sección se presentan los avisos para la comunidad académica </p>
+      </div>
+    </div><!-- end title --> 
+<%
+=end%>
+
+    <hr class="invis">
+
+		<div class="avisos-page">
+			<% @avisos.each do |aviso| %>
+				<div class="post">
+					<span><%= aviso.section %></span> -- <span>(<%= aviso.created_at.strftime("%d/%m/%Y") %>)</span>
+					<article><%= aviso.content %></article>
+					<small> - <%= aviso.user.name %> - </small>
+				</div>
+			<% end %>
+		</div>
+  </div><!-- end container -->
+</div><!-- end section -->

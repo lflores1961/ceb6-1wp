@@ -73,14 +73,14 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
-              <li><a class="dropdown-item" href=<%= under_const_path %>>Contenidos</a></li>
+              <li><a class="dropdown-item" href=<%= microposts_path %>>Contenidos</a></li>
               <li><a class="dropdown-item" href=<%= users_path %>>Usuarios</a></li>
               <li><%= link_to "Log out", logout_path, class: "dropdown-item", method: :delete  %></li>
             </ul>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Avisos", '#' %>
+            <%= link_to "Avisos", avisos_path %>
           </li>
         <% end %>
       </ul>

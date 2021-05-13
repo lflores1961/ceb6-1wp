@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+  has_many :microposts, dependent: :destroy
   before_save { email.downcase! }
   # enum access_level: { user: 0, admin: 1, owner: 2 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i

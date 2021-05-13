@@ -1,0 +1,29 @@
+<%= form_with(model: micropost) do |form| %>
+  <% if micropost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
+
+      <ul>
+        <% micropost.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table class="horarios-table">
+    <tr class="control-box">
+      <td><%= form.label :section %></td>
+      <td><%= form.text_field :section %></td>
+    </tr>
+    <tr class="control-box">
+      <td><%= form.label :content, "Contenido" %></td>
+      <td><%= form.text_area :content, cols: 80, rows: 10 %></td>
+    </tr>
+    <%= hidden_field_tag :user_id, current_user.id %>
+    <tr class="control-box">
+      <td colspan="2" style="text-align:center;"><%= form.submit "Crear Aviso"%></td>
+    </tr>
+  </table>
+  
+<% end %>
