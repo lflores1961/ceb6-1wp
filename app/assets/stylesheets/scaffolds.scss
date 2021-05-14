@@ -80,7 +80,7 @@ label {
 .avisos-title-box{
 	//background: url("../../assets/images/banner.png");
 	//background: url("<%= image_tag("banner.png") %>");
-	background-image: url(asset-path("MITBB.png"));
+	background-image: url(asset-path("MITBB2.png"));
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -94,7 +94,7 @@ label {
 	font-weight: 800;
 	text-transform: capitalize;
 	padding-top: 11%;
-	font-size: 64px;
+	font-size: 84px;
 	line-height: 0px;
 }
 
@@ -115,4 +115,11 @@ label {
       float: right;
     }
   }
+}
+
+span.m_1 {
+  color: rgb(53, 5, 42);
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 20px;
 }

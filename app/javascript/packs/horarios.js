@@ -4,6 +4,9 @@
 document.addEventListener("turbolinks:load", function () {
   $(function () {
     $('.btnHorario').on("click", function (event) {
+      if ($(".modal-backdrop").length > 1) {
+        $(".modal-backdrop").not(':first').remove();
+      }
       event.preventDefault();
       $('.modal img').attr('src', $(this).data('imagen'));
       $('.modal').modal('show');

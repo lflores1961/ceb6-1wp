@@ -20,6 +20,10 @@
       <td><%= form.label :content, "Contenido" %></td>
       <td><%= form.text_area :content, cols: 80, rows: 10 %></td>
     </tr>
+    <tr class="control-box">
+      <td><%= form.label :generator %></td>
+      <td><%= form.text_field :generator %></td>
+    </tr>
     <%= hidden_field_tag :user_id, current_user.id %>
     <tr class="control-box">
       <td colspan="2" style="text-align:center;"><%= form.submit "Crear Aviso"%></td>

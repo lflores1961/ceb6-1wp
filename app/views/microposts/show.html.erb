@@ -1,19 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Section:</strong>
-  <%= @micropost.section %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @micropost.content %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @micropost.user_id %>
-</p>
+<div class="container">
+  <table class="horarios-table">
+    <tr>
+      <td>Sección:</td>
+      <td><%= @micropost.section %></td>
+    </tr>
+    <tr>
+      <td>Contenido</td>
+      <td><%= @micropost.content %></td>
+    </tr>
+    <tr>
+      <td>Responsable:</td>
+      <td><%= @micropost.generator %></td>
+    </tr>
+    <tr>
+      <td>Usuario:</td>
+      <td><%= @micropost.user.name %>
+    </tr>
+  </table>
+</div>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>

@@ -23,7 +23,7 @@
 				<div class="post">
 					<span><%= aviso.section %></span> -- <span>(<%= aviso.created_at.strftime("%d/%m/%Y") %>)</span>
 					<article><%= aviso.content %></article>
-					<small> - <%= aviso.user.name %> - </small>
+					<small> - <%= aviso.generator %> - </small>
 				</div>
 			<% end %>
 		</div>
