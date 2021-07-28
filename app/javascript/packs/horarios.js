@@ -9,7 +9,7 @@ document.addEventListener("turbolinks:load", function () {
       }
       event.preventDefault();
       $('.modal img').attr('src', $(this).data('imagen'));
-      $('.modal').modal('show');
+      $('#exampleModal').modal('show');
     });
   })
 })

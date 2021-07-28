@@ -1,6 +1,13 @@
 <!-- The Modal -->
-<div id="myModal" class="modal">
-  <%= image_tag "NuevoModal.jpg", id: "myImg" %>
-
-  <img class="modal-content" id="img01">
+<div class="modal fade" id="avisoModal" role="dialog" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag "NuevoModal.jpg", id: "myImg" %>
+      </div>
+    </div>
+  </div>
 </div>

@@ -115,3 +115,8 @@ textarea {
   font-weight: bolder;
   color:rgb(12, 103, 177);
 }
+
+.modal-dialog {
+  width: auto;
+  max-width: 960px; // Optional, maximum width
+}
